@@ -1,3 +1,7 @@
-<h1>Hola mundo</h1>
-
-<router-outlet></router-outlet>
+<app-header></app-header>
+<!-- Lista de Videos-->
+<div class="grid">
+    <app-card [dataEntrante]="detalleVideo" *ngFor="let detalleVideo of listaDeVideos"></app-card>
+</div>
+<!-- Lista de favoritos-->
+<app-sidebar></app-sidebar>

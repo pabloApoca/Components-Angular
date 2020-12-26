@@ -1,1 +1,10 @@
-<p>card works!</p>
+<div class="card">
+    <img class="image"  [src]="dataEntrante?.img" alt="">
+    <div class="wrapper-text">
+        <div class="title"> {{dataEntrante?.title}} </div>
+        <div class="sub-title"> {{dataEntrante?.subtitle}} </div>
+    </div>
+    <div>
+        <button class="favorite" (click)="agregarFavorito()">Add favorite</button>
+    </div>
+</div>
